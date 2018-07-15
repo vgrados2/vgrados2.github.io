@@ -1,4 +1,4 @@
-var socket = io.connect('https://enigmatic-island-68471.herokuapp.com:36960', {'forceNew': true});
+var socket = io.connect('https://enigmatic-island-68471.herokuapp.com', {'forceNew': true});
 socket.on('messages', function(data){
     console.log(data);
     render(data);
